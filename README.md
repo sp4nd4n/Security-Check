@@ -1,5 +1,12 @@
 # Security Check — v1
 
+![Platform](https://img.shields.io/badge/Platform-Android-orange?style=for-the-badge&logo=android&logoColor=white)
+![Language](https://img.shields.io/badge/Backend-Python-yellow?style=for-the-badge&logo=python&logoColor=black)
+![OS](https://img.shields.io/badge/OS-Kali_Linux-black?style=for-the-badge&logo=kalilinux&logoColor=white)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-Supported-darkgreen?style=for-the-badge&logo=virtualbox&logoColor=white)
+![Network](https://img.shields.io/badge/Network-TCP%2FIP-orange?style=for-the-badge)
+![Java](https://img.shields.io/badge/Android_App-Java-orange?style=for-the-badge&logo=openjdk&logoColor=white)
+
 ## A. VirtualBox networking for phone-hotspot setup
 
 - **Use NAT with port forwarding for this initial setup:**
