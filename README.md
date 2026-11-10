@@ -22,7 +22,7 @@
    - Guest Port: `Own choice`
    
 4. On Windows, connect to your phone hotspot and run `ipconfig` in cmd.
-   Find the IPv4 address of the Wi-Fi adapter connected to the phone hotspot.
+   Find the IPv4 address of the Wi-Fi adapter connected to the phone hotspot (Wireless Lan adapter).
 
 - **What port to set?**
 
