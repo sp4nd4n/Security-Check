@@ -70,3 +70,9 @@ Once you started the python file then:
    - Check your kali linux terminal, you'll find the values of the credentials.
 
 **Even if you put any other username and password, the login fails, but still the values of the credentials are captured inside the terminal.**
+
+---
+
+Ⓒ 2026 Spandan Chatterjee. All rights reserved.
+
+
