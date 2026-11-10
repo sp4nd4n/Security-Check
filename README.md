@@ -1,53 +1,45 @@
 # Security Check — v1
 
-This is a deliberately simple LAN-only demonstration:
-- The Android app displays preset credentials `Test` / `test@123`.
-- The user can submit them to the Python server running in Kali.
-- Kali verifies the fixed demo pair and prints the submitted demo username/password and result.
-- Preferences allow a server IP and server port. The port field has the placeholder `e.g. 4444`.
+## A. VirtualBox networking for phone-hotspot setup
 
-**Important:** These are public, hard-coded demo credentials, not real user credentials.
-Do not reuse this design for collecting real account passwords. The server uses plain HTTP
-for an isolated lab demonstration; do not expose it to the internet or use real credentials.
+Use NAT with port forwarding for this initial setup:
 
-## A. Start Kali backend
+1. Open your kali linux settings.
+2. Enable adapter; Attached to: **NAT**.
+3. Port Forwarding → add:
+   - Name: `SecurityCheck`
+   - Protocol: `TCP`
+   - Host IP: `0.0.0.0`
+   - Host Port: `Own choice`
+   - Guest IP: [Write `hostname -I`]
+   - Guest Port: `Own choice`
+   
+4. On Windows, connect to your phone hotspot and run `ipconfig` in cmd.
+   Find the IPv4 address of the Wi-Fi adapter connected to the phone hotspot.
+5. In the Android app, click the 3 dots at the top right then Preferences, enter that Windows IPv4 address and port `Own choice`.
+
+
+
+The phone, Windows PC, and Kali VM must be able to communicate through this path.
+If Windows Firewall prompts, allow the Python server / inbound TCP port on Private networks
+only. Do not expose the demo server to the public internet.
+
+## B. Start Kali backend
 Extract the ZIP in Kali, then:
 
 ```bash
-cd Security-Check-v1/Kali-Backend
-python3 server.py --port 4444
+cd Downloads
+```
+```bash
+cd Security-Check-v1
+```
+```bash
+cd Kali-backend
 ```
 
 To use another port, replace `4444` with that port.
 
 The server binds to `0.0.0.0` and listens on the chosen port.
-
-## B. VirtualBox networking for phone-hotspot setup
-
-Use NAT with port forwarding for this initial setup:
-
-1. Open your kali linux settings.
-3. Enable adapter; Attached to: **NAT**.
-4. Port Forwarding → add:
-   - Name: `SecurityCheck`
-   - Protocol: `TCP`
-   - Host IP: 0.0.0.0
-   - Host Port: `4444`
-   - Guest IP: [Write `hostname -I`]
-   - Guest Port: `4444`
-5. Start Kali and run the Python server on port 4444.
-6. On Windows, connect to your phone hotspot and run `ipconfig`.
-   Find the IPv4 address of the Wi-Fi adapter connected to the phone hotspot.
-7. In the Android app Preferences, enter that Windows IPv4 address and port `4444`.
-
-If you choose another port, use that same port for:
-- the Python command (`--port PORT`)
-- VirtualBox Host Port and Guest Port
-- the Android app's Server Port field.
-
-The phone, Windows PC, and Kali VM must be able to communicate through this path.
-If Windows Firewall prompts, allow the Python server / inbound TCP port on Private networks
-only. Do not expose the demo server to the public internet.
 
 ## C. Build Android APK
 Open `Android-App` in Android Studio. Allow Gradle sync.
