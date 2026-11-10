@@ -1,0 +1,7 @@
+com.example.securitycheck.app-pngs-0 F:\Projects\Security-Check-v1\Android-App\app\build\generated\res\pngs\release
+com.example.securitycheck.app-resValues-1 F:\Projects\Security-Check-v1\Android-App\app\build\generated\res\resValues\release
+com.example.securitycheck.app-packageReleaseResources-2 F:\Projects\Security-Check-v1\Android-App\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.example.securitycheck.app-packageReleaseResources-3 F:\Projects\Security-Check-v1\Android-App\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.example.securitycheck.app-release-4 F:\Projects\Security-Check-v1\Android-App\app\build\intermediates\merged_res\release\mergeReleaseResources
+com.example.securitycheck.app-main-5 F:\Projects\Security-Check-v1\Android-App\app\src\main\res
+com.example.securitycheck.app-release-6 F:\Projects\Security-Check-v1\Android-App\app\src\release\res
