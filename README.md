@@ -1,4 +1,4 @@
-# Security Check — v1 (preset demo credentials)
+# Security Check — v1
 
 This is a deliberately simple LAN-only demonstration:
 - The Android app displays preset credentials `Test` / `test@123`.
@@ -26,15 +26,14 @@ The server binds to `0.0.0.0` and listens on the chosen port.
 
 Use NAT with port forwarding for this initial setup:
 
-1. Shut down the Kali VM.
-2. VirtualBox → Kali VM → Settings → Network → Adapter 1.
+1. Open your kali linux settings.
 3. Enable adapter; Attached to: **NAT**.
-4. Advanced → Port Forwarding → add:
+4. Port Forwarding → add:
    - Name: `SecurityCheck`
    - Protocol: `TCP`
-   - Host IP: leave blank
+   - Host IP: 0.0.0.0
    - Host Port: `4444`
-   - Guest IP: leave blank
+   - Guest IP: [Write `hostname -I`]
    - Guest Port: `4444`
 5. Start Kali and run the Python server on port 4444.
 6. On Windows, connect to your phone hotspot and run `ipconfig`.
