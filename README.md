@@ -39,7 +39,7 @@ If you choose any port number, other than `4444`, then make sure to make changes
 
 The server binds to `0.0.0.0` and listens on the chosen port.
 
-The python code will be written below.
+The python code is written below.
 ## B. Start Kali backend
 Extract the ZIP in Kali, then:
 
