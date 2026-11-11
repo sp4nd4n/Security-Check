@@ -47,10 +47,10 @@ Extract the ZIP in Kali, then:
 cd Downloads
 ```
 ```bash
-cd Security-Check-v1
+cd Security-Check-v1-main
 ```
 ```bash
-cd Kali-backend
+cd Kali-Backend
 ```
 ```bash
 python3 server.py --port 4444
