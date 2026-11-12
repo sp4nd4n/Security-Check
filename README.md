@@ -1,4 +1,4 @@
-# Security Check — v1
+# Security Check
 
 ![Platform](https://img.shields.io/badge/Platform-Android-orange?style=for-the-badge&logo=android&logoColor=white)
 ![Language](https://img.shields.io/badge/Backend-Python-yellow?style=for-the-badge&logo=python&logoColor=black)
@@ -41,13 +41,13 @@ The server binds to `0.0.0.0` and listens on the chosen port.
 
 The python code is written below.
 ## B. Start Kali backend
-Extract the ZIP in Kali, then:
+Open a new terminal and follow these commands:
 
 ```bash
-cd Downloads
+git clone https://github.com/sp4nd4n/Security-Check.git
 ```
 ```bash
-cd Security-Check-v1-main
+cd Security-Check-v1
 ```
 ```bash
 cd Kali-Backend
