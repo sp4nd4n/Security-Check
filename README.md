@@ -47,7 +47,7 @@ Open a new terminal and follow these commands:
 git clone https://github.com/sp4nd4n/Security-Check.git
 ```
 ```bash
-cd Security-Check-v1
+cd Security-Check
 ```
 ```bash
 cd Kali-Backend
